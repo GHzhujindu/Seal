@@ -59,7 +59,7 @@ export default {
 }
     #GSystemUnit{
         width: 100%;
-        height: 100%;
+        min-height: 600px;
         min-width: 800px;
         margin: 0 auto;
         background: #E9EEF3;
@@ -71,7 +71,7 @@ export default {
     .GSystemManagement_left{
         padding: 0 20px;
         text-align:center;
-         height: 100%;
+         min-height: 600px;
     }
     .GSystemManagement_left>ul>li> div{
        width: 76px;
@@ -84,12 +84,11 @@ export default {
     .GSystemManagement_right{
         padding: 0 18px;
         heihgt: 100%;
-        height: 100%;
+        min-height: 600px;
 
     }
     .GSystemManagement_right> table{
         width: 100%;
-        height: 100%;
         mine-width: 958px;
         text-align:center;
     }
@@ -121,7 +120,7 @@ export default {
     }
     .GJurisdiction_center{
         width: 218px;
-        height: 100%;
+        height: 600px;
         background: #fff;
         font-size: 14px;
         padding: 14px 0 0 24px;

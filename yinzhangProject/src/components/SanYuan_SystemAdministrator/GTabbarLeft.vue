@@ -23,6 +23,7 @@ export default {
     #GTabbarLeft{
         width: 175px;
         height: 100%;
+        min-height:682px;
         background: #333;    
     }
     .GHeader{

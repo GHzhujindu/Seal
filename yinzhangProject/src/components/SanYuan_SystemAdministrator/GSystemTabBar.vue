@@ -22,7 +22,7 @@ export default {
 <style scoped>
     #GSystemTabBar{
         width: 175px;
-        height: 100%;
+        height:682px;
         position:absolute;
         left:0;
     }

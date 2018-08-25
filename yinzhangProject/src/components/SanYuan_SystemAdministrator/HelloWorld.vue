@@ -46,14 +46,7 @@ export default {
 h1, h2 {
   font-weight: normal;
 }
-body,html{
-  width: 100%;
-  height: 100%;
-}
-#app{
-  width: 100%;
-  height: 100%;
-}
+
 li {
     list-style:none;
 }
@@ -74,9 +67,7 @@ a {
     text-align: center;
     line-height: 60px;
   }
-  .el-container{
-  height: 100%;
-  }
+  
   .el-aside {
     background-color: #333333;
     color: #333;
@@ -91,10 +82,7 @@ a {
   body > .el-container {
     margin-bottom: 40px;
   }
-  .systermadministorOne{
-  width: 100%;
-  height: 100%;
-  }
+  
   
   
 </style>
