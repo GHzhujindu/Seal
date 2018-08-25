@@ -15,10 +15,7 @@ import GSystemLogStampList from '@/components/SanYuan_SystemAdministrator/log/GS
 import GSystemLogOperatelist from '@/components/SanYuan_SystemAdministrator/log/GSystemLogOperatelist'
 import GSystemLogUserList from '@/components/SanYuan_SystemAdministrator/log/GSystemLogUserList'
 
-import GSystemSetInterFace from '@/components/SanYuan_SystemAdministrator/set/GSystemSetInterFace'
-import GSystemSetInterFaceList from '@/components/SanYuan_SystemAdministrator/set/GSystemSetInterFaceList'
-import GSystemSetPasswordList from '@/components/SanYuan_SystemAdministrator/set/GSystemSetPasswordList'
-import GSystemSetPowerList from '@/components/SanYuan_SystemAdministrator/set/GSystemSetPowerList'
+
 
 import Register from '@/ThreeJobs/index/Register'
 import component from '@/ThreeJobs/SafetyManagement/component/component'
@@ -35,6 +32,7 @@ import Zanquanlog from '@/ThreeJobs/SafetyAuditor/Zanquanlog'
 import Zzhizhanglog from '@/ThreeJobs/SafetyAuditor/Zzhizhanglog'
 import Zyinkongyilog from '@/ThreeJobs/SafetyAuditor/Zyinkongyilog'
 import ZSystemManagement from '@/ThreeJobs/SafetyManagement/SystemManagement/ZSystemManagement'
+
 
 import Router from 'vue-router'
 Vue.use(Router)
