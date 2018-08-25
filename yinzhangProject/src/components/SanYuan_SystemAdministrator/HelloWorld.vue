@@ -38,29 +38,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-h1, h2 {
-  font-weight: normal;
-}
 
-li {
-    list-style:none;
-}
-a {
-  color: #42b983;
-  text-decoration: none;
-}
-   
-    table{
-        border-collapse: collapse;
-    }
-.contents{
-
-}
   .el-header{
     background-color: #fff;
     color: #333;

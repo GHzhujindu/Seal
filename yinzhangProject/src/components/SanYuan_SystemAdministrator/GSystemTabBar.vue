@@ -2,9 +2,9 @@
   <div id="GSystemTabBar">
         <div class="GHeader"><img src="../../assets/u46.png" /></div>
         <ul>
-            <li><router-link to="/HelloWorld/GSystemUnit"><img src="../../assets/u13.png" />系统管理</router-link></li>
-            <li><router-link to="/HelloWorld/GSystemLogStamp"><img src="../../assets/u18.png">日志管理</router-link></li>
-            <li><router-link to="/HelloWorld/GSystemSetInterFace"><img src="../../assets/u23.png">系统设置</router-link></li>
+            <li><router-link to="/HelloWorld/GSystemUnit"><img :src="require('@/assets/u13.png')" />系统管理</router-link></li>
+            <li><router-link to="/HelloWorld/GSystemLogStamp"><img :src="require('@/assets/u18.png')">日志管理</router-link></li>
+            <li><router-link to="/HelloWorld/GSystemSetInterFace"><img :src="require('@/assets/u23.png')">系统设置</router-link></li>
         </ul>
   </div>
 </template>

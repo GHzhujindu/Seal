@@ -11,9 +11,9 @@
                         <option>4</option>
                     </select>
                     操作人：<input type="text" class="operator"/>
-                    操作日期：<input type="text" /><img src="../../assets/u1935.png" />
-                    &nbsp;至&nbsp;&nbsp;<input type="text" /><img src="../../assets/u1935.png" />
-                    <span><img src="../../assets/u1917.png" class="search" />查询</span>
+                    操作日期：<input type="text" /><img  :src="require('@/assets/u1935.png')" />
+                    &nbsp;至&nbsp;&nbsp;<input type="text" /><img  :src="require('@/assets/u1935.png')" />
+                    <span><img  :src="require('@/assets/u1917.png')" class="search" />查询</span>
                 </form>
             </div>
             <table>

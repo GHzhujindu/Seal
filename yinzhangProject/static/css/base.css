@@ -1,17 +1,17 @@
 *{margin:0;padding:0;-webkit-user-select:none;font-weight:normal;font-style:normal;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-text-size-adjust: 100%;-ms-user-select:none;user-select:none;-webkit-overflow-scrolling:touch;}
-html{'微软雅黑',Arial,sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+html{font-family:'微软雅黑',Arial,sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
 body,form,input,button,dl,dt,dd,ol,li,h1,h2,h3,h4,h5,h6{margin:0;padding:0;}
 p{overflow: hidden;}
 body{width:100%;background: #F8F9FA}
 h1,h2,h3,h4,h5,h6{font-size:100%;}
-input,textarea,select{-webkit-user-select:text;-ms-user-select:text;user-select:text;-webkit-appearance:none;}
+input,textarea,select{-webkit-user-select:text;-ms-user-select:text;user-select:text;}
 textarea{resize:none;}
 table{border-collapse:collapse;}
-input,select,textarea{outline:none;border:none;background:none;font-size:0.7rem;font-family:"微软雅黑"}
+input,select,textarea{outline:none;border:1px solid #dcdfe6;font-family:"微软雅黑"}
 a{text-decoration:none;-WebKit-touch-callout:none;outline:0;cursor:pointer;color:#666;}
 em,i{font-style:normal;}
 li,ol{list-style:none;}
-img{border:none;width:100%;vertical-align:top;}
+img{border:none;}
 .tip{position:absolute;left:0;right:0;top:0;bottom:0;z-index:98;background:transparent;}
 .fixedmode{position:fixed;}
 .tip .tipcontent{position: absolute; left:50%; top:50%; -webkit-transform:translate(-50%,-50%); transform:translate(-50%,-50%);padding:10px 20px;text-align:center;background:rgba(79,79,79,.9);border-radius:1.2rem;letter-spacing:0.8px;overflow:hidden;transition:opacity 0.4s;color:#fff;opacity:0;}

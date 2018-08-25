@@ -7,7 +7,7 @@
                         <li>
                             <router-link to="/HelloWorld/GSystemSetInterFace/GSystemSetInterFaceList">
 
-                            <div><img src="../../../assets/u835.png" /></div>
+                            <div><img  :src="require('@/assets/u835.png')" /></div>
                             定义界面
                             </router-link>
 
@@ -15,7 +15,7 @@
                         <li>
                             <router-link to="/HelloWorld/GSystemSetInterFace/GSystemSetPasswordList">
 
-                            <div><img src="../../../assets/u788.png" /></div>
+                            <div><img  :src="require('@/assets/u788.png')" /></div>
                             口令定义
                             </router-link>
 
@@ -23,7 +23,7 @@
                         <li>
                             <router-link to="/HelloWorld/GSystemSetInterFace/GSystemSetPowerList">
 
-                            <div><img src="../../../assets/u459.png" /></div>
+                            <div><img  :src="require('@/assets/u459.png')" /></div>
                             授权管理
                             </router-link>
                         </li>

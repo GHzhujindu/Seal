@@ -3,11 +3,11 @@
        <div class="GSystemManagement_left">
             <ul>
                 <li>
-                    <div><img src="../../assets/u113.png" /></div>
+                    <div><img :src="require('@/assets/u113.png')" /></div>
                     角色管理
                 </li>
                 <li>
-                    <div><img src="../../assets/u1303.png" /></div>
+                    <div><img :src="require('@/assets/u1303.png')"/></div>
                     权限管理
                 </li>
             </ul>

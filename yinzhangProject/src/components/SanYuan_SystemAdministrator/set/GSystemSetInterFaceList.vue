@@ -27,6 +27,7 @@
                       </label>
 
                       <br />
+                      
                       <input type="button" value="保存">
                 </form>
           </li>
@@ -104,6 +105,7 @@
             [type="button"]{
               width: 100px;
               height: 40px;
+              border: 1px solid;
             }
             span{
               font-size: 12px;
