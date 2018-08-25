@@ -15,6 +15,10 @@ import GSystemLogStampList from '@/components/SanYuan_SystemAdministrator/log/GS
 import GSystemLogOperatelist from '@/components/SanYuan_SystemAdministrator/log/GSystemLogOperatelist'
 import GSystemLogUserList from '@/components/SanYuan_SystemAdministrator/log/GSystemLogUserList'
 
+import GSystemSetInterFace from '@/components/SanYuan_SystemAdministrator/set/GSystemSetInterFace'
+import GSystemSetInterFaceList from '@/components/SanYuan_SystemAdministrator/set/GSystemSetInterFaceList'
+import GSystemSetPasswordList from '@/components/SanYuan_SystemAdministrator/set/GSystemSetPasswordList'
+import GSystemSetPowerList from '@/components/SanYuan_SystemAdministrator/set/GSystemSetPowerList'
 
 
 import Register from '@/ThreeJobs/index/Register'
