@@ -6,19 +6,19 @@
                     <ul>
                         <li>
                             <router-link to="/HelloWorld/GSystemLogStamp/GSystemLogStampList">
-                            <div><img src="../../../assets/u464.png" /></div>
+                            <div><img :src="require('@/assets/u464.png')" /></div>
                             用印记录
                             </router-link>
                         </li>
                         <li>
                             <router-link to="/HelloWorld/GSystemLogStamp/GSystemLogOperatelist">
-                            <div><img src="../../../assets/u469.png" /></div>
+                            <div><img :src="require('@/assets/u469.png')" /></div>
                             业务日志
                             </router-link>
                         </li>
                         <li>
                             <router-link to="/HelloWorld/GSystemLogStamp/GSystemLogUserList">
-                            <div><img src="../../../assets/u459.png" /></div>
+                            <div><img :src="require('@/assets/u459.png')" /></div>
                             用户日志
                             </router-link>
                         </li>

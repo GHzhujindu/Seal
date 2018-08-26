@@ -5,11 +5,11 @@
                 <div class="GSystemManagement_left">
                     <ul>
                         <li>
-                            <div><img src="../../assets/u113.png" /></div>
+                            <div><img  :src="require('@/assets/u113.png')" /></div>
                             角色管理
                         </li>
                         <li>
-                            <div><img src="../../assets/u1303.png" /></div>
+                            <div><img  :src="require('@/assets/u1303.png')" /></div>
                             权限管理
                         </li>
                     </ul>
@@ -17,8 +17,8 @@
           </el-aside>
           <el-aside width="220px">
                   <div class="GJurisdiction_center">
-                    <div class="jurisdiction_img1"><img src="../../assets/u91.png" />书生</div>
-                    <div class="jurisdiction_img2"><img src="../../assets/u95.png" /><span>中国银行</span></div>   
+                    <div class="jurisdiction_img1"><img  :src="require('@/assets/u91.png')" />书生</div>
+                    <div class="jurisdiction_img2"><img  :src="require('@/assets/u95.png')" /><span>中国银行</span></div>   
                    </div>
           </el-aside>
           <el-main>

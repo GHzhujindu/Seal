@@ -4,8 +4,8 @@
             <li>系统管理员</li>
             <li>2018-08-15</li>
             <li>08：23：32</li>
-            <li><img src="../../assets/u48.png" class="bg1" /></li>
-            <li><img src="../../assets/u42.png" class="bg2" /></li>
+            <li><img :src= "require('@/assets/u48.png')" class="bg1" /></li>
+            <li><img :src="require('@/assets/u42.png')" class="bg2" /></li>
         </ul>
   </div>
 </template>

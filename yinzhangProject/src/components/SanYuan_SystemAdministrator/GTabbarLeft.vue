@@ -2,9 +2,9 @@
   <div id="GTabbarLeft">
         <div class="GHeader"><img src="../../assets/u46.png"></div>
         <ul>
-            <li><router-link to="/GSystemManagement"><img src="../../assets/u13.png">系统管理</router-link></li>
-            <li><router-link to="/GDaylyManage"><img src="../../assets/u18.png">日志管理</router-link></li>
-            <li><router-link to="/GApproalSetup"><img src="../../assets/u23.png">审批设置</router-link></li>
+            <li><router-link to="/GSystemManagement"><img :src="require('@/assets/u13.png')">系统管理</router-link></li>
+            <li><router-link to="/GDaylyManage"><img :src="require('@/assets/u18.png')">日志管理</router-link></li>
+            <li><router-link to="/GApproalSetup"><img :src="require('@/assets/u23.png')">审批设置</router-link></li>
         </ul>
   </div>
 </template>
