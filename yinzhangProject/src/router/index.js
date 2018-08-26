@@ -21,6 +21,16 @@ import GSystemSetPasswordList from '@/components/SanYuan_SystemAdministrator/set
 import GSystemSetPowerList from '@/components/SanYuan_SystemAdministrator/set/GSystemSetPowerList'
 
 
+import sealIndex from '@/components/sealAdministrator/sealCommon/sealIndex'
+import selManageList from '@/components/sealAdministrator/manage/sealManageList'
+import addSeal from '@/components/sealAdministrator/manage/addSeal'
+import selArchiveList from '@/components/sealAdministrator/archive/selArchiveList'
+import selLogList from '@/components/sealAdministrator/log/selLogList'
+
+import signatureIndex from '@/components/signature/signatureCommon/signatureIndex'
+import signatureConfigList from '@/components/signature/config/signatureConfigList'
+
+
 import Register from '@/ThreeJobs/index/Register'
 import component from '@/ThreeJobs/SafetyManagement/component/component'
 import Zimg from '@/ThreeJobs/SafetyManagement/component/Zimg'
@@ -49,145 +59,145 @@ export default new Router({
       name: 'Register',
       component: Register,
     },
-       {
-          path: '/HelloWorld',
-          name: 'HelloWorld',
-          component: HelloWorld,
-            children:[
-                  {
-                    path: 'GSystemUnit',
-                    name: 'GSystemUnit',
-                    component: GSystemUnit,
-                    children:[
-                    {
-                        path: '',
-                        name: 'GSystemUnitList',
-                        component: GSystemUnitList  
-                    },{
-                        path: 'GSystemUnitList',
-                        name: 'GSystemUnitList',
-                        component: GSystemUnitList  
-                    },
-                    {
-                        path: 'GSystemUserList',
-                        name: 'GSystemUserList',
-                        component: GSystemUserList  
-                    }]
-                },
-                {
-                      path: 'GSystemLogStamp',
-                      name: 'GSystemLogStamp',
-                      component: GSystemLogStamp,
-                        children:[{
-                            path: '',
-                            name: 'GSystemLogStampList',
-                            component: GSystemLogStampList  
-                        },{
-                            path: 'GSystemLogStampList',
-                            name: 'GSystemLogStampList',
-                            component: GSystemLogStampList  
-                        },
-                        {
-                            path: 'GSystemLogOperatelist',
-                            name: 'GSystemLogOperatelist',
-                            component: GSystemLogOperatelist  
-                        },
-                        {
-                            path: 'GSystemLogUserList',
-                            name: 'GSystemLogUserList',
-                            component: GSystemLogUserList  
-                        }]
-                  },
-{
-    path: 'GSystemSetInterFace',
-    name: 'GSystemSetInterFace',
-    component: GSystemSetInterFace,
-    children:[
+    {
+      path: '/HelloWorld',
+      name: 'HelloWorld',
+      component: HelloWorld,
+      children: [
+        {
+          path: 'GSystemUnit',
+          name: 'GSystemUnit',
+          component: GSystemUnit,
+          children: [
             {
-                path: '',
-                name: 'GSystemSetInterFaceList',
-                component: GSystemSetInterFaceList  
-            },{
-                path: 'GSystemSetInterFaceList',
-                name: 'GSystemSetInterFaceList',
-                component: GSystemSetInterFaceList  
-            },
-            {
-                path: 'GSystemSetPasswordList',
-                name: 'GSystemSetPasswordList',
-                component: GSystemSetPasswordList  
-            },
-            {
-                path: 'GSystemSetPowerList',
-                name: 'GSystemSetPowerList',
-                component: GSystemSetPowerList  
-            }
-    ]
-}]
-      },
-      {
               path: '',
-              name: 'GSystemUnit',
-              component: GSystemUnit  
+              name: 'GSystemUnitList',
+              component: GSystemUnitList
+            }, {
+              path: 'GSystemUnitList',
+              name: 'GSystemUnitList',
+              component: GSystemUnitList
+            },
+            {
+              path: 'GSystemUserList',
+              name: 'GSystemUserList',
+              component: GSystemUserList
+            }]
+        },
+        {
+          path: 'GSystemLogStamp',
+          name: 'GSystemLogStamp',
+          component: GSystemLogStamp,
+          children: [{
+            path: '',
+            name: 'GSystemLogStampList',
+            component: GSystemLogStampList
+          }, {
+            path: 'GSystemLogStampList',
+            name: 'GSystemLogStampList',
+            component: GSystemLogStampList
           },
-      {
-          path: '/GJurisdiction',
-          name: 'GJurisdiction',
-          component: GJurisdiction
-      },
-      {
-      		path: '/GSystemManagement',
-	      	name: 'GSystemManagement',
-     	 	  component: GSystemManagement
-      },
-      {
-      		path: 'GDaylyManage',
-	      	name: 'GDaylyManage',
-     	 	component: GDaylyManage
-      },
-      {
-      		path: 'GApproalSetup',
-	      	name: 'GApproalSetup',
-     	 	component: GApproalSetup
-      }
-    ,{
+          {
+            path: 'GSystemLogOperatelist',
+            name: 'GSystemLogOperatelist',
+            component: GSystemLogOperatelist
+          },
+          {
+            path: 'GSystemLogUserList',
+            name: 'GSystemLogUserList',
+            component: GSystemLogUserList
+          }]
+        },
+        {
+          path: 'GSystemSetInterFace',
+          name: 'GSystemSetInterFace',
+          component: GSystemSetInterFace,
+          children: [
+            {
+              path: '',
+              name: 'GSystemSetInterFaceList',
+              component: GSystemSetInterFaceList
+            }, {
+              path: 'GSystemSetInterFaceList',
+              name: 'GSystemSetInterFaceList',
+              component: GSystemSetInterFaceList
+            },
+            {
+              path: 'GSystemSetPasswordList',
+              name: 'GSystemSetPasswordList',
+              component: GSystemSetPasswordList
+            },
+            {
+              path: 'GSystemSetPowerList',
+              name: 'GSystemSetPowerList',
+              component: GSystemSetPowerList
+            }
+          ]
+        }]
+    },
+    {
+      path: '',
+      name: 'GSystemUnit',
+      component: GSystemUnit
+    },
+    {
+      path: '/GJurisdiction',
+      name: 'GJurisdiction',
+      component: GJurisdiction
+    },
+    {
+      path: '/GSystemManagement',
+      name: 'GSystemManagement',
+      component: GSystemManagement
+    },
+    {
+      path: 'GDaylyManage',
+      name: 'GDaylyManage',
+      component: GDaylyManage
+    },
+    {
+      path: 'GApproalSetup',
+      name: 'GApproalSetup',
+      component: GApproalSetup
+    }
+    , {
       path: '/component',
       name: 'component',
       component: component,
-      children : [
+      children: [
         {
-          path : "Zimg",
-          name : "Zimg",
+          path: "Zimg",
+          name: "Zimg",
           component: Zimg,
         },
         {
-          path : "Zryqx",
-          name : "Zryqx",
+          path: "Zryqx",
+          name: "Zryqx",
           component: Zryqx,
         },
         {
-          path : "Zquanxian",
-          name : "Zquanxian",
+          path: "Zquanxian",
+          name: "Zquanxian",
           component: Zquanxian,
         },
         {
-          path : "Zlogguanli",
-          name : "Zlogguanli",
+          path: "Zlogguanli",
+          name: "Zlogguanli",
           component: Zlogguanli,
         },
         {
-          path : "ZNewltype",
-          name : "ZNewltype",
+          path: "ZNewltype",
+          name: "ZNewltype",
           component: ZNewltype,
         },
         {
-          path : "ZSystemManagement",
-          name : "ZSystemManagement",
+          path: "ZSystemManagement",
+          name: "ZSystemManagement",
           component: ZSystemManagement,
         },
         {
-          path : "GSystemSetup",
-          name : "GSystemSetup",
+          path: "GSystemSetup",
+          name: "GSystemSetup",
           component: GSystemSetup,
         }
       ]
@@ -196,7 +206,7 @@ export default new Router({
       path: '/Zanquanshenji',
       name: 'Zanquanshenji',
       component: Zanquanshenji,
-      children :[
+      children: [
         {
           path: 'Zanquanshenjis',
           name: 'Zanquanshenjis',
@@ -221,6 +231,46 @@ export default new Router({
           path: 'Zyinkongyilog',
           name: 'Zyinkongyilog',
           component: Zyinkongyilog,
+        }
+      ]
+    },
+    {
+      path: '/sealIndex',
+      name: 'sealIndex',
+      component: sealIndex,
+      children: [
+        {
+          path: "sealManageList",
+          name: "sealManageList",
+          component: selManageList
+        },
+        {
+          path: "addSeal",
+          name: "addSeal",
+          component: addSeal
+        },
+        {
+          path: "selArchiveList",
+          name: "selArchiveList",
+          component: selArchiveList
+        },
+        {
+          path: "selLogList",
+          name: "selLogList",
+          component: selLogList
+        }
+
+      ]
+    },
+    {
+      path: '/signatureIndex',
+      name: 'signatureIndex',
+      component: signatureIndex,
+      children: [
+        {
+          path: "signatureConfigList",
+          name: "signatureConfigList",
+          component: signatureConfigList
         }
       ]
     }

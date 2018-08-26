@@ -1,11 +1,10 @@
 <template>
 <el-container>
-  <el-header height="82px"><GHeader></GHeader></el-header>
+  <el-header height="82px"><signatureTop></signatureTop></el-header>
   <el-container>
-    <el-aside width="175px"><GTabbarLeft></GTabbarLeft></el-aside>
+    <el-aside width="175px"><signatureTabBarLeft></signatureTabBarLeft></el-aside>
     <el-main>
         <router-view />
-        
     </el-main>
   </el-container>
 </el-container>
@@ -13,12 +12,13 @@
 
 
 <script>
-import GHeader from './GHeader'
-import GTabbarLeft from './GTabbarLeft'
+import signatureTop from './signatureTop'
+import signatureTabBarLeft from './signatureTabBarLeft'
 export default {
+    name : "sealIndex",
     components:{
-	  GHeader,
-      GTabbarLeft
+	    signatureTop,
+      signatureTabBarLeft
   },
   data () {
     return {

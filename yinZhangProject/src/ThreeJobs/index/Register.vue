@@ -28,7 +28,10 @@ export default {
       register(){
           // this.$router.push({path:'/component/Zimg'})
         //   this.$router.push({path:'/Zanquanshenji/Zanquanshenjis'})
-        this.$router.push({path:'/HelloWorld/GSystemUnit'})
+        // this.$router.push({path:'/HelloWorld/GSystemUnit'})
+        // this.$router.push({path:'/sealIndex/sealManageList'})
+        this.$router.push({path:'/signatureIndex/signatureConfigList'})
+      
       }
   }
 }
