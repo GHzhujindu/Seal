@@ -83,6 +83,11 @@ export default {
                 address: '上海市普陀',
             }]
         }
+    },
+    methods : {
+        ZNewltype(){
+
+        }
     }
 }
 </script>
@@ -92,24 +97,18 @@ export default {
     height: 80%;
 }
 
-.el-table__body tr {
-    height: 20%;
-}
 
 .el-table td {
-    padding: 8px 0;
+    padding:3px 0;
 }
 </style>
 <style lang="scss" scoped>
 .signet {
     width: 100%;
-    height: 100%;
-    min-width: 736px;
 }
 
 .signets {
-    width: 45%;
-    height: 50%;
+    width: 48%;
     min-width: 360px;
     display: inline-block;
     .el-table {

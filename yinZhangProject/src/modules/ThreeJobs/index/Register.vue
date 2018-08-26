@@ -28,10 +28,10 @@ export default {
     },
     methods: {
         register() {
-            this.$router.push({ path: '/component/index'})
+            // this.$router.push({ path: '/component/index'})
             //   this.$router.push({path:'/Zanquanshenji/Zanquanshenjis'})
             // this.$router.push({path:'/HelloWorld/GSystemUnit'})
-            // this.$router.push({path:'/CentreComponent/Firstindex'})
+            this.$router.push({path:'/CentreComponent/Firstindex'})
         }
     }
 }

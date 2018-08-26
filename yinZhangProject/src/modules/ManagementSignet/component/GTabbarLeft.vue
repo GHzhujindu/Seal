@@ -16,7 +16,7 @@ export default {
                 {
                     label: "印章管理",
                     img: require('@/assets/u13.png'),
-                    path: "ZSystemManagement",
+                    path: "ManagementSignet",
                     isActive: false
                 },
                 {

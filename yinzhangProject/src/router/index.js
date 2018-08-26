@@ -224,6 +224,11 @@ export default new Router({
           path : "Firstindex",
           name : "Firstindex",
           component : _import("ManagementSignet/component/Firstindex")
+        },
+        {
+          path : "ManagementSignet",
+          name : "ManagementSignet",
+          component : _import("ManagementSignet/component/ManagementSignet")
         }
       ]
     }

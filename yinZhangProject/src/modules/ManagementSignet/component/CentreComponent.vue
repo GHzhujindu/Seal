@@ -19,7 +19,6 @@
 import GHeader from './GHeader'
 import GTabbarLeft from './GTabbarLeft'
 export default {
-    name: 'HelloWorld',
     components: {
         GHeader,
         GTabbarLeft
@@ -107,7 +106,6 @@ table {
         padding: 0;
     }
     .el-container {
-        .el-aside {}
         .el-main {
             background: #e9f0f5;
         }
