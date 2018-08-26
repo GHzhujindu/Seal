@@ -31,6 +31,7 @@ export default {
             this.$router.push({ path: '/component/index'})
             //   this.$router.push({path:'/Zanquanshenji/Zanquanshenjis'})
             // this.$router.push({path:'/HelloWorld/GSystemUnit'})
+            // this.$router.push({path:'/CentreComponent/Firstindex'})
         }
     }
 }
@@ -106,7 +107,7 @@ table {
 .Register {
     width: 100%;
     height: 100%;
-    background: url('../../assets/register.png') no-repeat center; // background:url(require('@/assets/register.png')) no-repeat center;
+    background: url('../../../assets/register.png') no-repeat center; // background:url(require('@/assets/register.png')) no-repeat center;
     background-size: 100% 100%;
     .denglu {
         width: 30%;
@@ -117,7 +118,6 @@ table {
         left: 95px;
         background: #e9e9e9;
         text-align: center;
-        img {}
         ul {
             width: 100%;
             li {

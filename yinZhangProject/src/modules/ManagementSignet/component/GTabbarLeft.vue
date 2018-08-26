@@ -1,12 +1,5 @@
 <template>
     <div class="GTabbarLeft">
-        <!--
-            <ul>
-                <li @click="ZSystemManagement"><img :src="require('@/assets/u13.png')"></img>系统管理</li>
-                <li @click="Zlogguanli"><img src="../assets/u18.png">日志管理</li>
-                <li @click="GSystemSetup"><img src="../assets/u23.png">系统设置</li>
-            </ul>
-            -->
         <ul>
             <li :class="{ active: item.isActive }" v-for="(item,ind) in menus" :key="ind" @click="ZmenuClick(item.path,ind)">
                 <img :src="item.img">{{item.label}}
@@ -21,39 +14,21 @@ export default {
         return {
             menus: [
                 {
-                    label: "系统管理",
+                    label: "印章管理",
                     img: require('@/assets/u13.png'),
                     path: "ZSystemManagement",
                     isActive: false
                 },
                 {
-                    label: "日志管理",
+                    label: "印章审批",
                     img: require('@/assets/u18.png'),
                     path: "Zlogguanli",
-                    isActive: false
-                },
-                {
-                    label: "系统设置",
-                    img: require('@/assets/u23.png'),
-                    path: "GSystemSetup",
                     isActive: false
                 }
             ]
         }
     },
     methods: {
-        // ZSystemManagement(){
-        //     this.$router.push({path:'ZSystemManagement'})
-        // },
-        // GDaylyManage(){
-        //     this.$router.push({path:'GDaylyManage'})
-        // },
-        // Zlogguanli(){
-        //     this.$router.push({path:'Zlogguanli'})            
-        // },
-        // GSystemSetup(){
-        //     this.$router.push({path:'GSystemSetup'})                        
-        // },
         ZmenuClick(path, index) {
             this.menus.forEach((val, ind) => {
                 val.isActive = ind == index ? true : false;

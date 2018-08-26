@@ -48,7 +48,7 @@ export default new Router({
     {
       path: '/',
       name: 'Register',
-      component: _import("index/Register"),
+      component: _import("ThreeJobs/index/Register"),
     },
     {
       path: '/HelloWorld',
@@ -154,64 +154,76 @@ export default new Router({
     , {
       path: '/component',
       name: 'component',
-      component: _import("SafetyManagement/component/component"),
+      component: _import("ThreeJobs/SafetyManagement/component/component"),
       children: [
         {
           path: "index",
           name: "index",
-          component: _import("SafetyManagement/component/index"),
+          component: _import("ThreeJobs/SafetyManagement/component/index"),
         },
         {
           path: "Zlogguanli",
           name: "Zlogguanli",
-          component: _import("SafetyManagement/LogManagement/Zlogguanli"),
+          component: _import("ThreeJobs/SafetyManagement/LogManagement/Zlogguanli"),
         },
         {
           path: "ZNewltype",
           name: "ZNewltype",
-          component: _import("SafetyManagement/ApprovalManagement/ZNewltype"),
+          component: _import("ThreeJobs/SafetyManagement/ApprovalManagement/ZNewltype"),
         },
         {
           path: "ZSystemManagement",
           name: "ZSystemManagement",
-          component: _import("SafetyManagement/SystemManagement/ZSystemManagement"),
+          component: _import("ThreeJobs/SafetyManagement/SystemManagement/ZSystemManagement"),
         },
         {
           path: "GSystemSetup",
           name: "GSystemSetup",
-          component: _import("SafetyManagement/ApprovalManagement/GSystemSetup"),
+          component: _import("ThreeJobs/SafetyManagement/ApprovalManagement/GSystemSetup"),
         }
       ]
     },
     {
       path: '/Zanquanshenji',
       name: 'Zanquanshenji',
-      component: _import("SafetyAuditor/Zanquanshenji"),
+      component: _import("ThreeJobs/SafetyAuditor/Zanquanshenji"),
       children: [
         {
           path: 'Zanquanshenjis',
           name: 'Zanquanshenjis',
-          component: _import("SafetyAuditor/Zanquanshenjis"),
+          component: _import("ThreeJobs/SafetyAuditor/Zanquanshenjis"),
         },
         {
           path: 'Zsystemlog',
           name: 'Zsystemlog',
-          component: _import("SafetyAuditor/Zsystemlog"),
+          component: _import("ThreeJobs/SafetyAuditor/Zsystemlog"),
         },
         {
           path: 'Zanquanlog',
           name: 'Zanquanlog',
-          component: _import("SafetyAuditor/Zanquanlog"),
+          component: _import("ThreeJobs/SafetyAuditor/Zanquanlog"),
         },
         {
           path: 'Zzhizhanglog',
           name: 'Zzhizhanglog',
-          component: _import("SafetyAuditor/Zzhizhanglog"),
+          component: _import("ThreeJobs/SafetyAuditor/Zzhizhanglog"),
         },
         {
           path: 'Zyinkongyilog',
           name: 'Zyinkongyilog',
-          component: _import("SafetyAuditor/Zyinkongyilog"),
+          component: _import("ThreeJobs/SafetyAuditor/Zyinkongyilog"),
+        }
+      ]
+    },
+    {
+      path: '/CentreComponent',
+      name: 'CentreComponent',
+      component: _import("ManagementSignet/component/CentreComponent"),
+      children :[
+        {
+          path : "Firstindex",
+          name : "Firstindex",
+          component : _import("ManagementSignet/component/Firstindex")
         }
       ]
     }
