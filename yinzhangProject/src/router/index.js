@@ -162,11 +162,6 @@ export default new Router({
           component: _import("SafetyManagement/component/Zimg"),
         },
         {
-          path: "Zryqx",
-          name: "Zryqx",
-          component: _import("SafetyManagement/SystemManagement/Zryqx"),
-        },
-        {
           path: "Zquanxian",
           name: "Zquanxian",
           component: _import("SafetyManagement/SystemManagement/Zquanxian"),
