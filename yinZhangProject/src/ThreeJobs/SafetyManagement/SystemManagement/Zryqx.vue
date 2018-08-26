@@ -1,7 +1,7 @@
 <template>
   <div class="Zryqx">
     <table>
-        <tr><td>*角色名称</td><td><input type="text" /></td></tr>
+        <tr><td>*角色名称</td><td ><input type="text" /></td></tr>
         <tr><td>*角色描述</td><td><input type="text" /><span class="quanxian">权限设置<el-checkbox>全选</el-checkbox></span></td></tr>
         <tr><td>印章管理</td><td class="yzguanli"><el-checkbox>印章申请</el-checkbox><el-checkbox>印证发布列表</el-checkbox></td><td class="yzguanli"><el-checkbox>印章申请列表</el-checkbox><el-checkbox>删除印章</el-checkbox></td><td class="yzguanli"><el-checkbox>待制章列表</el-checkbox></td><td class="yzguanli"><el-checkbox>印章列表</el-checkbox></td></tr>
         <tr><td>审批管理</td><td class="yzguanli"><el-checkbox>待审批列表</el-checkbox></td><td class="yzguanli"><el-checkbox>已审批列表</el-checkbox></td></tr>
