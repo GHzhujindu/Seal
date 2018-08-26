@@ -1,6 +1,6 @@
 <template>
   <div class="ZSystemManagement">
-    <el-tabs :tab-position="tabPosition" type="card" v-show="!flage">
+    <el-tabs :tab-position="tabPosition" type="card" v-show="el_tabsflage" >
       <el-tab-pane>
         <span class="el-tabs_span" slot="label">
           <i><img :src="require('@/assets/u113.png')"></i>角色管理</span>
@@ -44,7 +44,7 @@
         </el-table>
       </el-tab-pane>
     </el-tabs>
-    <div class="Zryqx" v-show="flage">
+    <div class="Zryqx" v-show="RoleFlage">
       <table>
         <tr>
           <td>*角色名称</td>
@@ -146,6 +146,41 @@
         <el-button @click="Savefile">保存</el-button>
       </el-row>
     </div>
+    <div class="Zquanxian" v-show="JurisdivtionFlage">
+      <el-form ref="form" :model="form" label-width="80px">
+        <el-form-item label="所属单位">
+          <el-input v-model="form.name" disabled></el-input>
+        </el-form-item>
+        <el-form-item label="用户名称">
+          <el-input v-model="form.name" disabled></el-input>
+        </el-form-item>
+        <el-form-item label="办公电话">
+          <el-input v-model="form.name" disabled></el-input>
+        </el-form-item>
+        <el-form-item label="用户号码">
+          <el-input v-model="form.name" disabled></el-input>
+        </el-form-item>
+        <el-form-item label="姓名">
+          <el-input v-model="form.name" disabled></el-input>
+        </el-form-item>
+        <el-form-item label="所属角色">
+          <el-select v-model="form.region" placeholder="请选择活动区域">
+            <el-option label="区域一" value="shanghai"></el-option>
+            <el-option label="区域二" value="beijing"></el-option>
+          </el-select>
+        </el-form-item>
+        <el-form-item label="是否激活">
+          <el-select v-model="form.region" placeholder="请选择活动区域">
+            <el-option label="区域一" value="shanghai"></el-option>
+            <el-option label="区域二" value="beijing"></el-option>
+          </el-select>
+        </el-form-item>
+        <el-form-item>
+          <el-button type="primary" @click="ButClick">保存</el-button>
+          <el-button @click="ButClick">取消</el-button>
+        </el-form-item>
+      </el-form>
+    </div>
   </div>
 </template>
 
@@ -153,7 +188,9 @@
 export default {
   data() {
     return {
-      flage : false,
+      RoleFlage: false,
+      JurisdivtionFlage: false,
+      el_tabsflage : true,
       tabPosition: "left",
       tableData: [{
         date: '2016-05-02',
@@ -187,18 +224,30 @@ export default {
         date: '2016-05-03',
         name: '王小虎',
         address: '上海市普陀区金沙江路 1516 弄'
-      }]
+      }],
+      form: {
+        name: '',
+        region: '',
+        type: [],
+      }
     }
   },
-    methods: {
+  methods: {
     Newfile() {
-      this.flage = true;
+      this.RoleFlage = true;
+      this.el_tabsflage = false;
+    },
+    Savefile() {
+      this.RoleFlage = false;
+      this.el_tabsflage = true;
     },
     handleClick() {
-      this.$router.push({ path: '/component/Zquanxian' })
+      this.JurisdivtionFlage = true;
+      this.el_tabsflage = false;
     },
-    Savefile(){
-      this.flage = false;
+    ButClick(){
+      this.JurisdivtionFlage = false;
+      this.el_tabsflage = true;
     }
   },
 }
@@ -242,52 +291,68 @@ export default {
       float: right;
     }
   }
-  .Zryqx{
-        height:100%; width:100%;
-        table{
-            width:100%;
-            background:#fff;
-            tr{
-                width:100%;
-                border:1px solid #ccc;
-                border-bottom:none;
-                input{
-                    width:40%; height:25px;
-                    margin-left:10px;
-                }
-                .quanxian{
-                    float:right;
-                    label{
-                        background:none ! important;
-                    }
-                }
-                .yzguanli{
-                    display:inline-block;
-                    width:25%;
-                    border-right:1px solid #ccc;
-                    label{
-                        margin-left:0;
-                        background:none ! important;
-                        margin-left:6px;
-                    }
-                }
-            }
-            tr:nth-of-type(odd) td:first-of-type{
-                background:#f1f1f1;
-            }
-            tr:nth-of-type(even) td:first-of-type{
-                background:#f7f7f7;
-            }
-            tr .yzguanli:last-of-type{
-                border-right:none;
-            }
+  .Zryqx {
+    height: 100%;
+    width: 100%;
+    table {
+      width: 100%;
+      background: #fff;
+      tr {
+        width: 100%;
+        border: 1px solid #ccc;
+        border-bottom: none;
+        input {
+          width: 40%;
+          height: 25px;
+          margin-left: 10px;
         }
-        .el-row{
-          padding:10px 0;
-          button{
-            float:right;
+        .quanxian {
+          float: right;
+          label {
+            background: none ! important;
           }
         }
+        .yzguanli {
+          display: inline-block;
+          width: 25%;
+          border-right: 1px solid #ccc;
+          label {
+            margin-left: 0;
+            background: none ! important;
+            margin-left: 6px;
+          }
+        }
+      }
+      tr:nth-of-type(odd) td:first-of-type {
+        background: #f1f1f1;
+      }
+      tr:nth-of-type(even) td:first-of-type {
+        background: #f7f7f7;
+      }
+      tr .yzguanli:last-of-type {
+        border-right: none;
+      }
     }
+    .el-row {
+      padding: 10px 0;
+      button {
+        float: right;
+      }
+    }
+  }
+  .Zquanxian {
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    text-align: center;
+    .el-form {
+      display: inline-block;
+      width: 60%;
+      padding-top: 10px;
+    }
+    .el-select {
+      width: 100%;
+    }
+  }
 }
 </style>
