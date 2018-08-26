@@ -28,7 +28,7 @@ export default {
     },
     methods: {
         register() {
-            this.$router.push({ path: '/component/Zimg' })
+            this.$router.push({ path: '/component/index'})
             //   this.$router.push({path:'/Zanquanshenji/Zanquanshenjis'})
             // this.$router.push({path:'/HelloWorld/GSystemUnit'})
         }

@@ -157,9 +157,9 @@ export default new Router({
       component: _import("SafetyManagement/component/component"),
       children: [
         {
-          path: "Zimg",
-          name: "Zimg",
-          component: _import("SafetyManagement/component/Zimg"),
+          path: "index",
+          name: "index",
+          component: _import("SafetyManagement/component/index"),
         },
         {
           path: "Zlogguanli",
